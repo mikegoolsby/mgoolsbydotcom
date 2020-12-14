@@ -1,42 +1,55 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import "fontsource-oswald";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const StyledHeader = styled.header`
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 8px;
+  background: #EDF5E1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const StyledNav = styled.nav`
+width: 100%;
+height: 100%;
+margin: 0 auto;
+padding: 14px;
+background: #EDF5E1;
+color: #05386B;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
+const StyledLogo = styled.div`
+  font-size: 2rem;
+  font-weight: 900;
+  color: #05386B;
+  font-family: 'Oswald';
+`
+
+const Header = () => {
+  return (
+    <StyledHeader>
+      <Link to="/" aria-label="home">
+        <StyledLogo>mike goolsby</StyledLogo>
+      </Link>
+    <StyledNav>
+        <div id="return-home">
+           <a href="#about">about me</a>
+           <a href="#experience">work experience</a> 
+           <a href="#projects">projects</a> 
+           <a href="#photos">photography</a>
+           <a href="#contact">contact</a>   
+        </div>
+    </StyledNav>
+    </StyledHeader>
+  )
 }
 
 export default Header
