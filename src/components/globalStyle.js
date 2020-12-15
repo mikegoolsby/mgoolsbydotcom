@@ -119,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
         border-style: solid;
         border-radius: 7px;
         border-color: white;
-        @media (min-width: 200px) {
+        @media (max-width: 900px) {
             display: none;
         }
     }
