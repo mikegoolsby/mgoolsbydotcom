@@ -6,8 +6,13 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     html {
+        scroll-behavior: smooth;
         width: 100%;
-        height: 100%;
+        height: auto;
+        @media (min-width: 900px) {
+            width: 100%;
+            height: auto;
+        }
     }
     body {
         width: 100%;
@@ -69,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
     }
     #projects {
         display: flex;
+        flex-direction: column;
         justify-context: center;
         align-items: center;
         margin-top: 100px;
@@ -90,16 +96,19 @@ const GlobalStyle = createGlobalStyle`
     }
     .projects {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     li {
         font-family: 'Oswald';
         line-height: 1.6;
         color: #05386B;
+        font-size: 24px;
         text-align: right;
         list-style-type: none;
-        animation: fadeIn ease 1s;
-        @media (min-width: 1200px) {
-            font-size: 2rem;
+        @media (min-width: 300px) {
+            font-size: 1.2rem;
             line-height: 3rem;
         }
     }
@@ -110,8 +119,8 @@ const GlobalStyle = createGlobalStyle`
         border-style: solid;
         border-radius: 7px;
         border-color: white;
-        @media: {
-            width: 100%;
+        @media (min-width: 200px) {
+            display: none;
         }
     }
     .proj-img {
@@ -123,10 +132,12 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 7px;
         border-style: solid;
         border-color: white;
+        @media (min-width: 300px) {
+            width: 95%;
+            height: auto;
+        }
     }
     .hvr-grow {
-        display: inline-block;
-        vertical-align: middle;
         transform: translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
         backface-visibility: hidden;

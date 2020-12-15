@@ -4,27 +4,32 @@ import styled from "styled-components"
 import "fontsource-oswald";
 
 const StyledHeader = styled.header`
-  width: 100%;
+  width: 99%;
   height: 100%;
-  margin: 0 auto;
   padding: 8px;
+  border-radius: 7px;
   background: #EDF5E1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-`
+  @media (min-width: 200px) {
+    width: 99%;
+    height: 100%;
+  }`
 
 const StyledNav = styled.nav`
 width: 100%;
 height: 100%;
-margin: 0 auto;
 padding: 14px;
 background: #EDF5E1;
 color: #05386B;
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
-`
+@media (min-width: 200px) {
+  width: 99%;
+  height: 100%;
+}`
 
 const StyledLogo = styled.div`
   font-size: 2rem;

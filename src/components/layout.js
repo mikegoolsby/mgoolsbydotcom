@@ -17,6 +17,7 @@ const StyledLayout = styled.div`
     max-width: 62.5rem;
     margin: 0 auto;
     padding: 0 2.5rem;
+    scroll-behavior: smooth;
   }
 `
 

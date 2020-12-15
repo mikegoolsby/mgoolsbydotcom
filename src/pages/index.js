@@ -2,6 +2,8 @@ import React from "react"
 import Layout from '../components/layout'
 import me from '../images/mgoolsby.jpg'
 import boxBow from '../images/boxbowport.png'
+import codex from '../images/codex.png'
+import rqst from '../images/rqst.png'
 
 const IndexPage = () => {
   return (
@@ -24,14 +26,31 @@ const IndexPage = () => {
           <h2>Here are some of my most recent projects.</h2>
           <h4>Box & Bow</h4>
           <div className="projects">
-            <a href="https://github.com/mikegoolsby/box_bow_client"
+            <a href="https://frosty-darwin-4987e4.netlify.app/"
               target="_blank"
               rel="nofollow noopener noreferrer"
               aria-label="External Link"
-            >View on Github</a>
+            ><img src={boxBow} className="proj-img hvr-grow" alt="home page of box and bow"></img></a>
+            <p>An application that allows you to put your holiday shopping list in one, easy-to-use place. Track your wishlist, attach a link, add the price, and even notate the item with some comments.</p>
           </div>
-          <img src={boxBow} className="proj-img" alt="home page of box and bow"></img>
-          <p>An application that allows you to put your holiday shopping list in one, easy-to-use place. Track your wishlist, attach a link, add the price, and even notate the item with some comments.</p>
+        </div>
+        <h4>CODEX</h4>
+        <div className="projects">
+        <a href="https://reverent-kalam-023988.netlify.app/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="External Link"
+            ><img src={codex} className="proj-img hvr-grow" alt="home page of codex"></img></a>
+            <p>CODEX is a resource repository for those about to attend a coding bootcamp - it includes tech gear recommendations, code games you can try, video resources, cheatsheets, and help for prepping for interviews.</p>
+        </div>
+        <h4>RQST</h4>
+        <div className="projects">
+        <a href="https://rqst-go.herokuapp.com/rqst-go"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="External Link"
+            ><img src={rqst} className="proj-img hvr-grow" alt="home page of rqsr"></img></a>
+            <p>A simple application that puts your time-off requests, approved days, and pending requests all in one place. Log in to your RQST account to view days that are currently available to request off. Your account also gives you access to your pending requests, and allows you to edit them up until approval.</p>
         </div>
       </section>
       <section id="photos">
