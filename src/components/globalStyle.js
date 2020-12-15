@@ -153,8 +153,8 @@ const GlobalStyle = createGlobalStyle`
         backface-visibility: hidden;
         opacity: 1;
         @media (max-width: 900px) {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 160px;
         }
     }
     .hvr-grow {
