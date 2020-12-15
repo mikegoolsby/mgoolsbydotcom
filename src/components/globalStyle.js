@@ -7,8 +7,6 @@ const GlobalStyle = createGlobalStyle`
     }
     html {
         scroll-behavior: smooth;
-        width: 100%;
-        height: auto;
         @media (min-width: 900px) {
             width: 100%;
             height: auto;
@@ -39,9 +37,21 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.6;
         color: white;
         text-align: center;
-        @media (min-width: 1200px) {
-            font-size: 2rem;
-            line-height: 3rem;
+        @media (max-width: 900px) {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+    }
+    h3 {
+        font-family: 'Oswald';
+        font-size: 40px;
+        line-height: 1.6;
+        color: #EDF5E1;
+        text-align: center;
+        margin-top: 55px;
+        @media (max-width: 900px) {
+            font-size: 40px;
+            line-height: 1.4rem;
         }
     }
     h4 {
@@ -93,12 +103,18 @@ const GlobalStyle = createGlobalStyle`
         },
         margin: 7px;
         padding: 9px;
+        @media  (max-width: 900px) {
+            font-size: 22px;
+            display: flex;
+            justify-content: space-around;
+        }
     }
     .projects {
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 55px;
     }
     li {
         font-family: 'Oswald';
@@ -120,7 +136,8 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 7px;
         border-color: white;
         @media (max-width: 900px) {
-            display: none;
+            height: 220px;
+            width: auto;
         }
     }
     .proj-img {
@@ -132,8 +149,11 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 7px;
         border-style: solid;
         border-color: white;
-        @media (min-width: 300px) {
-            width: 95%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        opacity: 1;
+        @media (max-width: 900px) {
+            width: 100%;
             height: auto;
         }
     }
@@ -157,6 +177,29 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         margin: 15px;
     }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container:hover .image {
+        opacity: 0.3;
+    }
+    
+      .container:hover .middle {
+        opacity: 1;
+    }
+    .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    } 
 `
 
 export default GlobalStyle

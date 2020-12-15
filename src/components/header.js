@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: top 0.5s
   @media (min-width: 200px) {
     width: 99%;
     height: 100%;
@@ -37,6 +38,7 @@ const StyledLogo = styled.div`
   color: #05386B;
   font-family: 'Oswald';
 `
+
 
 const Header = () => {
   return (
