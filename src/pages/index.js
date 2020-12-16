@@ -5,6 +5,7 @@ import boxBow from '../images/boxbowport.png'
 import codex from '../images/codex.png'
 import rqst from '../images/rqst.png'
 import walter from '../images/wherewalter.png'
+import portfolio from '../images/portfolio.png'
 
 const IndexPage = () => {
   return (
@@ -30,7 +31,7 @@ const IndexPage = () => {
         <div className="project" data-sal="fade"
           data-sal-delay="200"
           data-sal-easing="ease">
-          <h2>Here are some of my most recent projects.</h2>
+          <h2>Here are some of my most recent projects. Click on the image to check it out.</h2>
           <h3>box & bow</h3>
           <div className="projects">
             <a href="https://frosty-darwin-4987e4.netlify.app/"
@@ -41,7 +42,7 @@ const IndexPage = () => {
             <p>An application that allows you to put your holiday shopping list in one, easy-to-use place. Track your wishlist, attach a link, add the price, and even notate the item with some comments.</p>
           </div>
         </div>
-        <h3>CODEX</h3>
+        <h3>codex</h3>
         <div className="projects" data-sal="fade"
           data-sal-delay="200"
           data-sal-easing="ease">
@@ -76,11 +77,33 @@ const IndexPage = () => {
         </div>
       </section>
       <section id="photos">
-
+        <div data-sal="slide-right"
+    data-sal-delay="1000"
+    data-sal-easing="ease">
+          <h2 className="photo-text">When I'm not cranking out complete full-stack applications in a matter of hours (lol), I'm usually traveling around somewhere taking photos. Click to view the full portfolio.</h2>
+          <a href="https://mikenewyork.com/"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="External Link"
+                      >
+          <img src={portfolio} alt="screenshot of my portfolio" className="port-img hvr-grow"></img></a>
+        </div>
       </section>
-      <section id="contact">
-
-      </section>
+      <section id="contact" data-sal="slide-right"
+    data-sal-delay="1000"
+    data-sal-easing="ease">
+      <ul>
+          <li id="fade">To contact me, please send me an email at mgoolsby1091@gmail.com</li>
+          <li>Click<a href="https://github.com/mikegoolsby" className="contact-listing"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="External Link">here</a>to visit me on GitHub.</li>
+          <li>Click<a href="https://www.linkedin.com/in/mikegoolsby/" className="contact-listing"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="External Link">here</a>to visit me on LinkedIn.</li>
+        </ul>
+    </section>
     </Layout>
   )
 }

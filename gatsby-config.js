@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

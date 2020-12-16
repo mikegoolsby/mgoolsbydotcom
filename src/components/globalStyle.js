@@ -45,10 +45,10 @@ const GlobalStyle = createGlobalStyle`
     h3 {
         font-family: 'Oswald';
         font-size: 40px;
-        line-height: 1.6;
         color: #EDF5E1;
         text-align: center;
-        margin-top: 55px;
+        margin-top: 70px;
+        margin-bottom: 5px;
         @media (max-width: 900px) {
             font-size: 40px;
             line-height: 1.4rem;
@@ -70,6 +70,9 @@ const GlobalStyle = createGlobalStyle`
         color: #05386B;
         text-align: center;
         margin: 10px;
+        @media (max-width: 900px) {
+            width: 100%;
+        }
     }
     #style-me{
         color: white;
@@ -88,6 +91,16 @@ const GlobalStyle = createGlobalStyle`
         justify-context: center;
         align-items: center;
         margin-top: 100px;
+    }
+    #photos {
+        margin-top: 100px;
+    }
+    #contact {
+        display: flex;
+        justify-context: flex-end;
+        margin-top: 100px;
+        margin-right: 1px;
+        text-align: right;
     }
     a {
         display: inline-block;
@@ -117,6 +130,18 @@ const GlobalStyle = createGlobalStyle`
         margin: 55px;
     }
     li {
+        font-family: 'Oswald';
+        line-height: 1.6;
+        color: #05386B;
+        font-size: 24px;
+        text-align: right;
+        list-style-type: none;
+        @media (min-width: 300px) {
+            font-size: 1.2rem;
+            line-height: 3rem;
+        }
+    }
+    .contact-listing {
         font-family: 'Oswald';
         line-height: 1.6;
         color: #05386B;
@@ -177,29 +202,24 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         margin: 15px;
     }
-    .middle {
+    .photo-text {
+        text-align: left;
+        line-height: 1.6;
+        @media (max-width: 900px) {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+    }
+    .port-img {
+        border-radius: 7px;
+        border-style: solid;
+        border-color: white;
         transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
+        @media (max-width: 900px) {
+            width: auto;
+            height: 240px;
+        }
     }
-    .container:hover .image {
-        opacity: 0.3;
-    }
-    
-      .container:hover .middle {
-        opacity: 1;
-    }
-    .text {
-        background-color: #4CAF50;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-    } 
 `
 
 export default GlobalStyle
