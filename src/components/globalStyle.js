@@ -141,16 +141,33 @@ const GlobalStyle = createGlobalStyle`
             line-height: 3rem;
         }
     }
-    .contact-listing {
+    .a-mobile {
         font-family: 'Oswald';
         line-height: 1.6;
         color: #05386B;
         font-size: 24px;
         text-align: right;
         list-style-type: none;
-        @media (min-width: 300px) {
-            font-size: 1.2rem;
-            line-height: 3rem;
+        @media (max-width: 900px) {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.1;
+            color: #FFFFFF;
+        }
+    }
+    .contact-listing-li {
+        font-family: 'Oswald';
+        line-height: 1.6;
+        color: #05386B;
+        font-size: 24px;
+        text-align: right;
+        list-style-type: none;
+        @media (max-width: 900px) {
+            margin-top: 11px;
+            font-size: 16px;
+            line-height: 1.1;
         }
     }
     #me {

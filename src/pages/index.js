@@ -93,15 +93,17 @@ const IndexPage = () => {
     data-sal-delay="1000"
     data-sal-easing="ease">
       <ul>
-          <li id="fade">To contact me, please send me an email at mgoolsby1091@gmail.com</li>
-          <li>Click<a href="https://github.com/mikegoolsby" className="contact-listing"
+          <li id="fade" className="contact-listing-li">To contact me, please send me an email at mgoolsby1091@gmail.com.</li>
+          <li className="contact-listing-li">Click<a href="https://github.com/mikegoolsby"
                         target="_blank"
                         rel="nofollow noopener noreferrer"
-                        aria-label="External Link">here</a>to visit me on GitHub.</li>
-          <li>Click<a href="https://www.linkedin.com/in/mikegoolsby/" className="contact-listing"
+                        aria-label="External Link"
+                        className="a-mobile">here</a>to visit me on GitHub.</li>
+          <li className="contact-listing-li">Click<a href="https://www.linkedin.com/in/mikegoolsby/"
                         target="_blank"
                         rel="nofollow noopener noreferrer"
-                        aria-label="External Link">here</a>to visit me on LinkedIn.</li>
+                        aria-label="External Link"
+                        className="a-mobile">here</a>to visit me on LinkedIn.</li>
         </ul>
     </section>
     </Layout>
