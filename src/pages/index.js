@@ -6,6 +6,7 @@ import codex from '../images/codex.png'
 import rqst from '../images/rqst.png'
 import walter from '../images/wherewalter.png'
 import portfolio from '../images/portfolio.png'
+import escape from '../images/escape.png'
 
 const IndexPage = () => {
   return (
@@ -32,6 +33,17 @@ const IndexPage = () => {
           data-sal-delay="200"
           data-sal-easing="ease">
           <h2>Here are some of my most recent projects. Click on the image to check it out.</h2>
+          <h3>escape to mount snow</h3>
+          <div className="projects" data-sal="fade"
+            data-sal-delay="200"
+            data-sal-easing="ease">
+          <a href="https://heuristic-hamilton-019363.netlify.app/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="External Link"
+              ><img src={escape} className="proj-img hvr-grow" alt="home page of escape from mount snow"></img></a>
+              <p>Escape to Mount Snow is an app primarily designed to be used on an iPad as a digital informational booklet inside an Airbnb rental at Mount Snow, VT. </p>
+          </div>
           <h3>box & bow</h3>
           <div className="projects">
             <a href="https://frosty-darwin-4987e4.netlify.app/"
