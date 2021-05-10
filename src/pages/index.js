@@ -7,6 +7,7 @@ import rqst from '../images/rqst.png'
 import walter from '../images/wherewalter.png'
 import portfolio from '../images/portfolio.png'
 import escape from '../images/escape.png'
+import drums from '../images/drums.png'
 
 const IndexPage = () => {
   return (
@@ -64,6 +65,17 @@ const IndexPage = () => {
               aria-label="External Link"
             ><img src={codex} className="proj-img hvr-grow" alt="home page of codex"></img></a>
             <p>CODEX is a resource repository for those about to attend a coding bootcamp - it includes tech gear recommendations, code games you can try, video resources, cheatsheets, and help for prepping for interviews.</p>
+        </div>
+        <h3>Dale's Drumset</h3>
+        <div className="projects" data-sal="fade"
+          data-sal-delay="200"
+          data-sal-easing="ease">
+        <a href="https://mikegoolsby.github.io/drum_kit/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="External Link"
+            ><img src={drums} className="proj-img hvr-grow" alt="home page of codex"></img></a>
+            <p>You are a pug. You play the drums. You are now awesome.</p>
         </div>
         <h3>rqst</h3>
         <div className="projects" data-sal="fade"
